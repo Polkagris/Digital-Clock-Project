@@ -9,14 +9,14 @@ function clock(){
    document.getElementById("minute").innerHTML = minutes + ":";
    document.getElementById("second").innerHTML = seconds;
 
-   if(seconds < 9){
+   if(seconds <= 9){
      document.getElementById("second").innerHTML = "0" + seconds;
    }
-   if(minutes < 9){
-     document.getElementById("minute").innerHTML = "0" + minutes;
+   if(minutes <= 9){
+     document.getElementById("minute").innerHTML = "0" + minutes + ":";
    }
-   if(hours < 9){
-     document.getElementById("hour").innerHTML = "0" + hours;
+   if(hours <= 9){
+     document.getElementById("hour").innerHTML = "0" + hours + ":";
    }
 }
 setInterval(clock, 500);
