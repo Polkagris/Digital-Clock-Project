@@ -1,1 +1,30 @@
-ECHO is on.
+body{
+
+}
+#clock-container{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(10, minmax(100px, auto));
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(0deg, #e8e886, white);
+}
+#title{
+  grid-column: 3 / 6;
+  grid-row: 2 / 3;
+  border: 2px solid black;
+  text-align: center;
+  background: #00cc66;
+  color: white;
+  padding-top: 5px;;
+}
+#clock-box{
+  grid-column: 3 / 6;
+  grid-row: 3 / 4;
+  border: 10px solid lightgrey;
+  padding-top: 25px;
+  background: white;
+  text-align: center;
+}
+.digit{
+  font-size: 24px;
+}
